@@ -305,3 +305,38 @@ section { padding: 80px 0; }
   }
 
 }
+/* دکمه منو (سه خط) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--blue-dark);
+}
+
+/* حالت موبایل */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+}
