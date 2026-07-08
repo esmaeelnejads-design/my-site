@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ساویسمان | پخش لوله، اتصالات، پمپ و فلاشتانک</title>
+<link rel="icon" type="image/png" href="1horizontal_logo.png">
+<meta name="description" content="ساویسمان، پخش و فروش انواع لوله و اتصالات تک لایه، پنج لایه، فاضلابی، انواع پمپ، فلاشتانک، تجهیزات استخری، فوم و عایق ساختمانی با کیفیت و قیمت مناسب.">
+<meta property="og:title" content="ساویسمان | پخش تجهیزات ساختمانی و تأسیسات">
+<meta property="og:description" content="عرضه کننده انواع لوله و اتصالات، پمپ، فلاشتانک، تجهیزات استخری، فوم و عایق ساختمانی">
+<meta property="og:url" content="https://savisman.com">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-contacts">
+      <span>📞 <a href="tel:02165123450">۰۲۱-۶۵۱۲-۳۴۵۰</a></span>
+      <span>📞 <a href="tel:02165123450">09026504647</a></span>
+      <span>✉️ <a href="mailto:savisman.co@gmail.com">savisman.co@gmail.com</a></span>
+    </div>
+    <span>ساعات کاری: شنبه تا پنجشنبه ۸:۳۰ الی ۱۹:۳۰</span>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="1horizontal_logo.png" alt="ساویسمان"></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">خانه</a></li>
+      <li><a href="blog.html">آموزش</a></li>
+      <li><a href="price.html">لیست قیمت</a></li>
+      <li><a href="contact.html" class="nav-cta">تماس با ما</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>
+<style>
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-main) 55%, var(--blue-mid) 100%);
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px),
+                   repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px);
+}
+.hero-inner {
+  max-width:1280px;margin:0 auto;padding:0 2rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+  position:relative;z-index:1;width:100%;
+}
+.hero-badge {
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(244,165,28,0.2);border:1px solid rgba(244,165,28,0.4);
+  color:#FE720F;padding:7px 18px;font-size:12px;font-weight:700;
+  letter-spacing:0.08em;margin-bottom:1.5rem;
+}
+.hero h1 {
+  font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:900;
+  color:var(--white);line-height:1.18;margin-bottom:1.5rem;
+}
+.hero h1 .highlight { color:#FE720F; }
+.hero-desc { font-size:16px;color:rgba(255,255,255,0.78);line-height:1.85;margin-bottom:2rem;font-weight:300; }
+.hero-actions { display:flex;gap:1rem;flex-wrap:wrap; }
+.hero-features { display:flex;gap:2rem;margin-top:2.5rem;flex-wrap:wrap; }
+.hero-feature { display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.8);font-size:13px; }
+.hero-feature-dot { width:8px;height:8px;background:var(--accent);border-radius:50%;flex-shrink:0; }
+.hero-visual { display:grid;grid-template-columns:1fr 1fr;gap:12px; }
+.hero-stat-card {
+  background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.15);
+  padding:1.5rem;text-align:center;
+}
+.hero-stat-card.accent { background:rgba(244,165,28,0.15);border-color:rgba(244,165,28,0.3); }
+.hero-stat-num { font-size:2.2rem;font-weight:900;color:var(--white);line-height:1; }
+.hero-stat-num span { color:var(--accent); }
+.hero-stat-label { font-size:12px;color:rgba(255,255,255,0.65);margin-top:4px; }
+.hero-stat-icon { font-size:1.5rem;margin-bottom:8px; }
+.cat-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-light); }
+.cat-card {
+  background:var(--white);padding:2.5rem 1.5rem;text-align:center;
+  transition:all 0.25s;cursor:pointer;text-decoration:none;display:block;
+  position:relative;overflow:hidden;
+}
+.cat-card::after { content:'';position:absolute;bottom:0;right:0;left:0;height:3px;background:var(--blue-main);transform:scaleX(0);transition:transform 0.3s; }
+.cat-card:hover::after { transform:scaleX(1); }
+.cat-card:hover { background:var(--blue-ultra);transform:translateY(-2px); }
+.cat-icon { font-size:2.8rem;margin-bottom:1rem;display:block; }
+.cat-name { font-size:16px;font-weight:800;color:var(--dark);margin-bottom:6px; }
+.cat-count { font-size:12px;color:var(--steel); }
+.cat-arrow { font-size:13px;color:var(--blue-main);font-weight:700;margin-top:10px;display:block; }
+.why-us { background:var(--blue-ultra); }
+.why-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center; }
+.why-list { display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem; }
+.why-item { display:flex;gap:1.25rem;align-items:flex-start; }
+.why-icon-box { width:52px;height:52px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0; }
+.why-item-title { font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px; }
+.why-item-desc { font-size:13px;color:var(--mid);line-height:1.6; }
+.why-visual { display:grid;grid-template-columns:1fr 1fr;gap:1rem; }
+.why-card { background:var(--white);border:1px solid var(--border-light);padding:1.75rem;box-shadow:var(--shadow-sm); }
+.why-card:first-child { grid-column:1/-1; }
+.why-card-num { font-size:2.5rem;font-weight:900;color:var(--blue-pale);line-height:1;margin-bottom:8px; }
+.why-card-title { font-size:14px;font-weight:700;color:var(--dark); }
+.why-card-desc { font-size:12px;color:var(--steel);margin-top:4px;line-height:1.5; }
+.featured-header { display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem; }
+.brands { background:var(--light);padding:50px 0; }
+.brands-inner { max-width:1280px;margin:0 auto;padding:0 2rem; }
+.brands-title { text-align:center;font-size:13px;font-weight:700;color:var(--steel);letter-spacing:0.12em;margin-bottom:2rem; }
+.brands-logos { display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap; }
+.brand-logo { font-size:15px;font-weight:800;color:var(--border);letter-spacing:0.05em;padding:10px 24px;border:1.5px solid var(--border-light);transition:all 0.2s; }
+.brand-logo:hover { color:var(--blue-main);border-color:var(--blue-pale);background:var(--blue-ultra); }
+.cta-strip { background:linear-gradient(90deg,var(--blue-dark),var(--blue-main));padding:60px 0; }
+.cta-strip-inner { max-width:1280px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap; }
+.cta-text h2 { font-size:clamp(1.5rem,3vw,2rem);font-weight:900;color:var(--white);margin-bottom:6px; }
+.cta-text p { font-size:14px;color:rgba(255,255,255,0.7);font-weight:300; }
+.cta-actions { display:flex;gap:1rem;flex-wrap:wrap; }
+.testimonial-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem; }
+.testimonial-card { background:var(--white);border:1px solid var(--border-light);padding:1.75rem;position:relative; }
+.testimonial-card::before { content:'"';position:absolute;top:12px;left:16px;font-size:4rem;color:var(--blue-pale);line-height:1;font-family:serif; }
+.stars { color:var(--accent);font-size:14px;margin-bottom:12px; }
+.testimonial-text { font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:1.25rem;font-weight:300; }
+.testimonial-author { display:flex;align-items:center;gap:10px;border-top:1px solid var(--border-light);padding-top:1rem; }
+.author-avatar { width:38px;height:38px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:14px; }
+.author-name { font-size:13px;font-weight:700;color:var(--dark); }
+.author-role { font-size:11px;color:var(--steel); }
+@media(max-width:1024px){ .hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.why-grid{grid-template-columns:1fr;}.cat-grid{grid-template-columns:repeat(2,1fr);} }
+@media(max-width:768px){ .testimonial-grid{grid-template-columns:1fr;} }
+</style>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">پخش‌کننده رسمی برندهای معتبر</div>
+      <h1>ساویسمان، خانه ارزشمند<br><span class="highlight">پخش تخصصی لوله و اتصالات، پمپ و تجهیزات ساختمانی</span><br></h1>
+      <p class="hero-desc">ساویسمان پخش‌کننده تخصصی لوله و اتصالات، فوم، پمپ‌های آب و فلاشتانک . کیفیت اصل، تحویل به موقع.</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-accent">مشاهده محصولات</a>
+        <a href="price.html" class="btn btn-white">دریافت لیست قیمت</a>
+      </div>
+
+      
+      <div class="hero-features">
+        <div class="hero-feature"><div class="hero-feature-dot"></div>تضمین اصالت کالا</div>
+        <div class="hero-feature"><div class="hero-feature-dot"></div>ارسال سراسری</div>
+        <div class="hero-feature"><div class="hero-feature-dot"></div>مشاوره رایگان</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat-card"><div class="hero-stat-icon">🔧</div><div class="hero-stat-num">۳۰۰<span>+</span></div><div class="hero-stat-label">نوع محصول</div></div>
+      <div class="hero-stat-card accent"><div class="hero-stat-icon">🏗️</div><div class="hero-stat-num">۲۰۰<span>+</span></div><div class="hero-stat-label">پروژه تأمین‌شده</div></div>
+      <div class="hero-stat-card accent"><div class="hero-stat-icon">🤝</div><div class="hero-stat-num">۲۰<span>+</span></div><div class="hero-stat-label">سال تجربه</div></div>
+      <div class="hero-stat-card"><div class="hero-stat-icon">⭐</div><div class="hero-stat-num">۹۸<span>%</span></div><div class="hero-stat-label">رضایت مشتری</div></div>
+    </div>
+  </div>
+</section>
+<section style="padding:0;background:var(--white);">
+  <div style="max-width:1280px;margin:0 auto;padding:0 2rem;">
+    <div style="text-align:center;padding:50px 0 30px;">
+      <p class="eyebrow">دسته‌بندی محصولات</p>
+      <h2 class="section-title">چه محصولاتی داریم؟</h2>
+    </div>
+  </div>
+  <div class="cat-grid fade-up">
+    <a href="products.html#pipes" class="cat-card"><span class="cat-icon">🔵</span><div class="cat-name">لوله و اتصالات</div><div class="cat-count">PPR · PEX . PVC . UPVC</div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="products.html#pumps" class="cat-card"><span class="cat-icon">⚙️</span><div class="cat-name">پمپ‌ها</div><div class="cat-count">آب، کف‌کش، سیرکولاتور</div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="products.html#flush" class="cat-card"><span class="cat-icon">🚿</span><div class="cat-name">فلاشتانک</div><div class="cat-count">توکار · روکار </div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="products.html#valves" class="cat-card"><span class="cat-icon">🔩</span><div class="cat-name">شیرآلات</div><div class="cat-count">کنترلی · قطع‌وبست · ایمنی</div><span class="cat-arrow">مشاهده ←</span></a>
+  </div>
+</section>
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-num">۳۰۰<sup>+</sup></div><div class="stat-label">نوع محصول</div></div>
+      <div class="stat-item"><div class="stat-num">۲۰+</div><div class="stat-label">برند معتبر</div></div>
+      <div class="stat-item"><div class="stat-num">۳۱</div><div class="stat-label">استان تحت پوشش</div></div>
+      <div class="stat-item"><div class="stat-num">۲۰+</div><div class="stat-label">سال تجربه</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="why-us">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <p class="eyebrow">چرا ساویسمان؟</p>
+        <h2 class="section-title">تفاوت ما<br><span>در جزئیات است</span></h2>
+        <div class="why-list">
+        </div>
+      </div>
+      <div class="why-visual fade-up">
+        <div class="why-card"><div class="why-card-num">۱۰+</div><div class="why-card-title">سال حضور در بازار</div><div class="why-card-desc">اعتماد صدها پیمانکار و سازنده</div></div>
+        <div class="why-card"><div class="why-card-num">۲۰+</div><div class="why-card-title">برند معتبر</div><div class="why-card-desc">نمایندگی برندهای داخلی و خارجی</div></div>
+        <div class="why-card"><div class="why-card-num">۳۱</div><div class="why-card-title">استان تحت پوشش</div><div class="why-card-desc">شبکه توزیع سراسری</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <div class="cta-text">
+      <h2>آماده ارائه پیشنهاد قیمت هستیم</h2>
+      <p>لیست مواد مورد نیاز پروژه خود را ارسال کنید، ظرف ۲۴ ساعت استعلام دقیق دریافت کنید.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-accent">درخواست استعلام</a>
+      <a href="price.html" class="btn btn-white">لیست قیمت</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo"><img src="1horizontal_logo.png" alt="ساویسمان" onerror="this.style.border='3px solid red'"></div><p class="footer-about">ساویسمان، پخش‌کننده رسمی لوله و اتصالات، پمپ و فلاشتانک در کشور.</p></div>
+    <div><div class="footer-title">دسترسی سریع</div><ul class="footer-links"><li><a href="index.html">خانه</a></li><li><a href="blog.html">آموزش</a></li><li><a href="price.html">لیست قیمت</a></li><li><a href="contact.html">تماس</a></li></ul></div>
+    <div><div class="footer-title">محصولات</div><ul class="footer-links"></ul></div>
+    <div><div class="footer-title">تماس</div><div class="footer-contact-item"><span class="ic">📍</span><span>ملارد، بلوار هفت تیر، پلاک ۴۴۶</span></div><div class="footer-contact-item"><span class="ic">📞</span><span>۰۲۱-۶۵۱۲-۳۴۵۰</span></div><div class="footer-contact-item"><span class="ic">📞</span><span>۰۲۱-۶۵۱۲-۳۴۵۰</span></div><div class="footer-contact-item"><span class="ic">✉️</span><span>savisman.co@gmail.com</span></div></div>
+  </div>
+  <div class="footer-bottom"><span>© ۱۴۰۳ ساویسمان. تمام حقوق محفوظ است.</span></div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+const observer=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.12});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=window.scrollY>30?'0 4px 20px rgba(43,91,168,0.15)':'';});
+</script>
+</body>
+</html>
