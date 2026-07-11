@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://savisman.com/sitemap.xml
