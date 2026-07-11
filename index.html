@@ -57,18 +57,13 @@
 .hero-stat-label { font-size:12px;color:rgba(255,255,255,0.65);margin-top:4px; }
 .hero-stat-icon { font-size:1.5rem;margin-bottom:8px; }
 .why-us { background:var(--blue-ultra); }
-.why-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center; }
-.why-list { display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem; }
+.why-grid { display:grid;grid-template-columns:1fr;gap:2rem; }
+.why-list { display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2.5rem;margin-top:2rem;max-width:900px; }
 .why-item { display:flex;gap:1.25rem;align-items:flex-start; }
 .why-icon-box { width:52px;height:52px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;color:#fff; }
 .why-item-title { font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px; }
 .why-item-desc { font-size:13px;color:var(--mid);line-height:1.6; }
-.why-visual { display:grid;grid-template-columns:1fr 1fr;gap:1rem; }
-.why-card { background:var(--white);border:1px solid var(--border-light);padding:1.75rem;box-shadow:var(--shadow-sm); }
-.why-card:first-child { grid-column:1/-1; }
-.why-card-num { font-size:2.5rem;font-weight:900;color:var(--blue-pale);line-height:1;margin-bottom:8px; }
-.why-card-title { font-size:14px;font-weight:700;color:var(--dark); }
-.why-card-desc { font-size:12px;color:var(--steel);margin-top:4px;line-height:1.5; }
+@media(max-width:640px){ .why-list{grid-template-columns:1fr;} }
 .featured-header { display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem; }
 .brands { background:var(--light);padding:50px 0; }
 .brands-inner { max-width:1280px;margin:0 auto;padding:0 2rem; }
@@ -187,13 +182,10 @@
         <h2 class="section-title">تفاوت ما<br><span>در جزئیات است</span></h2>
         <div class="why-list">
           <div class="why-item"><div class="why-icon-box">✅</div><div><div class="why-item-title">اصالت کالا، تضمین‌شده</div><div class="why-item-desc">تمامی محصولات دارای گارانتی و مطابق استاندارد اصل هستند.</div></div></div>
-          <div class="why-item"><div class="why-icon-box">🚚</div><div><div class="why-item-title">ارسال سریع و سراسری</div><div class="why-item-desc">تحویل به موقع سفارشات به تمام نقاط کشور.</div></div></div>
+          <div class="why-item"><div class="why-icon-box">🚚</div><div><div class="why-item-title">ارسال سریع</div><div class="why-item-desc">تحویل به موقع سفارشات شما.</div></div></div>
           <div class="why-item"><div class="why-icon-box">💬</div><div><div class="why-item-title">مشاوره تخصصی رایگان</div><div class="why-item-desc">راهنمایی برای انتخاب مناسب‌ترین محصول متناسب با پروژه شما.</div></div></div>
-          <div class="why-item"><div class="why-icon-box">💰</div><div><div class="why-item-title">قیمت رقابتی و شفاف</div><div class="why-item-desc">فروش مستقیم بدون واسطه با بهترین قیمت بازار.</div></div></div>
+          <div class="why-item"><div class="why-icon-box">🤝</div><div><div class="why-item-title">همکاری با برندهای معتبر و مطرح</div><div class="why-item-desc">نمایندگی رسمی برندهای شناخته‌شده داخلی و خارجی برای اطمینان بیشتر شما.</div></div></div>
         </div>
-      </div>
-      <div class="why-visual fade-up">
-        <div class="why-card"><div class="why-card-num">۱۰+</div><div class="why-card-title">سال حضور در بازار</div><div class="why-card-desc">اعتماد صدها پیمانکار و سازنده</div></div>
       </div>
     </div>
   </div>
