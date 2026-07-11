@@ -15,3 +15,11 @@ window.addEventListener('scroll', () => {
   document.querySelector('nav').style.boxShadow =
     window.scrollY > 30 ? '0 4px 20px rgba(43,91,168,0.12)' : '0 2px 12px rgba(43,91,168,0.08)';
 });
+
+// Mobile menu toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksEl = document.querySelector('.nav-links');
+if (navToggle && navLinksEl) {
+  navToggle.addEventListener('click', () => navLinksEl.classList.toggle('open'));
+  navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinksEl.classList.remove('open')));
+}
