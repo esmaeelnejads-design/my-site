@@ -71,6 +71,14 @@ nav {
   border-bottom: 3px solid var(--blue-dark) !important;
 }
 .nav-cta:hover { background: var(--blue-dark) !important; }
+
+/* ========== ICONS (inline SVG line-icon system, replaces emoji) ========== */
+.icon {
+  width: 1em; height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
 .nav-toggle {
   display: none;
   background: none; border: none; cursor: pointer;
