@@ -24,7 +24,7 @@
 .brand-pill:hover, .brand-pill.active { background:var(--blue-main);border-color:var(--blue-main);color:var(--white); }
 
 /* CATEGORY SECTION */
-.brand-section { padding:60px 0;border-bottom:1px solid var(--border-light); }
+.brand-section { padding:60px 0;border-bottom:1px solid var(--border-light);scroll-margin-top:128px; }
 .brand-section:last-of-type { border-bottom:none; }
 .brand-section-head { display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap; }
 .brand-mark {
@@ -95,6 +95,7 @@
       <li><a href="price.html" class="active">لیست قیمت</a></li>
       <li><a href="contact.html" class="nav-cta">تماس با ما</a></li>
     </ul>
+    <button class="nav-toggle" aria-label="باز کردن منو">☰</button>
   </div>
 </nav>
 
@@ -450,6 +451,12 @@
 const observer=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.12});
 document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
 window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=window.scrollY>30?'0 4px 20px rgba(43,91,168,0.15)':'';});
+const navToggle=document.querySelector('.nav-toggle');
+const navLinksEl=document.querySelector('.nav-links');
+if(navToggle&&navLinksEl){
+  navToggle.addEventListener('click',()=>navLinksEl.classList.toggle('open'));
+  navLinksEl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinksEl.classList.remove('open')));
+}
 
 // Highlight active pill on scroll
 const sections = document.querySelectorAll('.brand-section');

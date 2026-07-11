@@ -12,35 +12,6 @@
 <meta property="og:type" content="website">
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div id="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-contacts">
-      <span>📞 <a href="tel:02165123450">۰۲۱-۶۵۱۲-۳۴۵۰</a></span>
-      <span>📞 <a href="tel:02165123450">09026504647</a></span>
-      <span>✉️ <a href="mailto:savisman.co@gmail.com">savisman.co@gmail.com</a></span>
-    </div>
-    <span>ساعات کاری: شنبه تا پنجشنبه ۸:۳۰ الی ۱۹:۳۰</span>
-  </div>
-</div>
-
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo"><img src="1horizontal_logo.png" alt="ساویسمان"></a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">خانه</a></li>
-      <li><a href="blog.html">آموزش</a></li>
-      <li><a href="price.html">لیست قیمت</a></li>
-      <li><a href="contact.html" class="nav-cta">تماس با ما</a></li>
-    </ul>
-  </div>
-</nav>
-
-<script src="main.js"></script>
-</body>
-</html>
 <style>
 .hero {
   min-height: 90vh;
@@ -85,24 +56,11 @@
 .hero-stat-num span { color:var(--accent); }
 .hero-stat-label { font-size:12px;color:rgba(255,255,255,0.65);margin-top:4px; }
 .hero-stat-icon { font-size:1.5rem;margin-bottom:8px; }
-.cat-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-light); }
-.cat-card {
-  background:var(--white);padding:2.5rem 1.5rem;text-align:center;
-  transition:all 0.25s;cursor:pointer;text-decoration:none;display:block;
-  position:relative;overflow:hidden;
-}
-.cat-card::after { content:'';position:absolute;bottom:0;right:0;left:0;height:3px;background:var(--blue-main);transform:scaleX(0);transition:transform 0.3s; }
-.cat-card:hover::after { transform:scaleX(1); }
-.cat-card:hover { background:var(--blue-ultra);transform:translateY(-2px); }
-.cat-icon { font-size:2.8rem;margin-bottom:1rem;display:block; }
-.cat-name { font-size:16px;font-weight:800;color:var(--dark);margin-bottom:6px; }
-.cat-count { font-size:12px;color:var(--steel); }
-.cat-arrow { font-size:13px;color:var(--blue-main);font-weight:700;margin-top:10px;display:block; }
 .why-us { background:var(--blue-ultra); }
 .why-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center; }
 .why-list { display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem; }
 .why-item { display:flex;gap:1.25rem;align-items:flex-start; }
-.why-icon-box { width:52px;height:52px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0; }
+.why-icon-box { width:52px;height:52px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;color:#fff; }
 .why-item-title { font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px; }
 .why-item-desc { font-size:13px;color:var(--mid);line-height:1.6; }
 .why-visual { display:grid;grid-template-columns:1fr 1fr;gap:1rem; }
@@ -132,9 +90,45 @@
 .author-avatar { width:38px;height:38px;background:var(--blue-main);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:14px; }
 .author-name { font-size:13px;font-weight:700;color:var(--dark); }
 .author-role { font-size:11px;color:var(--steel); }
-@media(max-width:1024px){ .hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.why-grid{grid-template-columns:1fr;}.cat-grid{grid-template-columns:repeat(2,1fr);} }
-@media(max-width:768px){ .testimonial-grid{grid-template-columns:1fr;} }
+@media(max-width:1024px){ .hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}.why-grid{grid-template-columns:1fr;} }
+@media(max-width:768px){
+  .testimonial-grid{grid-template-columns:1fr;}
+  .hero{min-height:auto;padding:56px 0;}
+  .hero-actions{flex-direction:column;align-items:stretch;}
+  .hero-actions .btn{text-align:center;}
+  .hero-features{gap:1rem;}
+  .cta-strip-inner{text-align:center;justify-content:center;}
+  .cta-actions{justify-content:center;width:100%;}
+  .cta-actions .btn{flex:1;text-align:center;}
+}
 </style>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-contacts">
+      <span>📞 <a href="tel:02636504647">۰۲۶-۳۶۵۰-۴۶۴۷</a></span>
+      <span>📱 <a href="tel:09026504647">۰۹۰۲-۶۵۰-۴۶۴۷</a></span>
+      <span>✉️ <a href="mailto:savisman.co@gmail.com">savisman.co@gmail.com</a></span>
+    </div>
+    <span>ساعات کاری: شنبه تا پنجشنبه ۸:۳۰ الی ۱۹:۳۰</span>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="1horizontal_logo.png" alt="ساویسمان"></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">خانه</a></li>
+      <li><a href="blog.html">آموزش</a></li>
+      <li><a href="price.html">لیست قیمت</a></li>
+      <li><a href="contact.html" class="nav-cta">تماس با ما</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="باز کردن منو">☰</button>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-inner">
     <div>
@@ -146,7 +140,6 @@
         <a href="price.html" class="btn btn-white">دریافت لیست قیمت</a>
       </div>
 
-      
       <div class="hero-features">
         <div class="hero-feature"><div class="hero-feature-dot"></div>تضمین اصالت کالا</div>
         <div class="hero-feature"><div class="hero-feature-dot"></div>ارسال سراسری</div>
@@ -161,6 +154,7 @@
     </div>
   </div>
 </section>
+
 <section style="padding:0;background:var(--white);">
   <div style="max-width:1280px;margin:0 auto;padding:0 2rem;">
     <div style="text-align:center;padding:50px 0 30px;">
@@ -168,19 +162,18 @@
       <h2 class="section-title">چه محصولاتی داریم؟</h2>
     </div>
   </div>
-  <div class="cat-grid">
-    <a href="products.html#pipes" class="cat-card"><span class="cat-icon">🔵</span><div class="cat-name">لوله و اتصالات</div><div class="cat-count">PPR · PEX . PVC . UPVC</div><span class="cat-arrow">مشاهده ←</span></a>
-    <a href="products.html#pumps" class="cat-card"><span class="cat-icon">⚙️</span><div class="cat-name">پمپ‌ها</div><div class="cat-count">آب، کف‌کش، سیرکولاتور</div><span class="cat-arrow">مشاهده ←</span></a>
-    <a href="products.html#flush" class="cat-card"><span class="cat-icon">🚿</span><div class="cat-name">فلاشتانک</div><div class="cat-count">توکار · روکار </div><span class="cat-arrow">مشاهده ←</span></a>
-    <a href="products.html#valves" class="cat-card"><span class="cat-icon">🔩</span><div class="cat-name">شیرآلات</div><div class="cat-count">کنترلی · قطع‌وبست · ایمنی</div><span class="cat-arrow">مشاهده ←</span></a>
+  <div class="cat-grid fade-up">
+    <a href="price.html#cat1" class="cat-card"><span class="cat-icon">🔵</span><div class="cat-name">لوله و اتصالات</div><div class="cat-count">PPR · PEX . PVC . UPVC</div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="price.html#cat4" class="cat-card"><span class="cat-icon">⚙️</span><div class="cat-name">پمپ‌ها</div><div class="cat-count">آب، کف‌کش، سیرکولاتور</div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="price.html#cat5" class="cat-card"><span class="cat-icon">🚿</span><div class="cat-name">فلاشتانک</div><div class="cat-count">توکار · روکار </div><span class="cat-arrow">مشاهده ←</span></a>
+    <a href="contact.html" class="cat-card"><span class="cat-icon">📞</span><div class="cat-name">تماس با ما</div><div class="cat-count">مشاوره و استعلام قیمت</div><span class="cat-arrow">تماس ←</span></a>
   </div>
 </section>
+
 <div class="stats-strip">
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item"><div class="stat-num">۳۰۰<sup>+</sup></div><div class="stat-label">نوع محصول</div></div>
-      <div class="stat-item"><div class="stat-num">۲۰+</div><div class="stat-label">برند معتبر</div></div>
-      <div class="stat-item"><div class="stat-num">۳۱</div><div class="stat-label">استان تحت پوشش</div></div>
       <div class="stat-item"><div class="stat-num">۲۰+</div><div class="stat-label">سال تجربه</div></div>
     </div>
   </div>
@@ -193,12 +186,14 @@
         <p class="eyebrow">چرا ساویسمان؟</p>
         <h2 class="section-title">تفاوت ما<br><span>در جزئیات است</span></h2>
         <div class="why-list">
+          <div class="why-item"><div class="why-icon-box">✅</div><div><div class="why-item-title">اصالت کالا، تضمین‌شده</div><div class="why-item-desc">تمامی محصولات دارای گارانتی و مطابق استاندارد اصل هستند.</div></div></div>
+          <div class="why-item"><div class="why-icon-box">🚚</div><div><div class="why-item-title">ارسال سریع و سراسری</div><div class="why-item-desc">تحویل به موقع سفارشات به تمام نقاط کشور.</div></div></div>
+          <div class="why-item"><div class="why-icon-box">💬</div><div><div class="why-item-title">مشاوره تخصصی رایگان</div><div class="why-item-desc">راهنمایی برای انتخاب مناسب‌ترین محصول متناسب با پروژه شما.</div></div></div>
+          <div class="why-item"><div class="why-icon-box">💰</div><div><div class="why-item-title">قیمت رقابتی و شفاف</div><div class="why-item-desc">فروش مستقیم بدون واسطه با بهترین قیمت بازار.</div></div></div>
         </div>
       </div>
       <div class="why-visual fade-up">
         <div class="why-card"><div class="why-card-num">۱۰+</div><div class="why-card-title">سال حضور در بازار</div><div class="why-card-desc">اعتماد صدها پیمانکار و سازنده</div></div>
-        <div class="why-card"><div class="why-card-num">۲۰+</div><div class="why-card-title">برند معتبر</div><div class="why-card-desc">نمایندگی برندهای داخلی و خارجی</div></div>
-        <div class="why-card"><div class="why-card-num">۳۱</div><div class="why-card-title">استان تحت پوشش</div><div class="why-card-desc">شبکه توزیع سراسری</div></div>
       </div>
     </div>
   </div>
@@ -219,10 +214,30 @@
 
 <footer>
   <div class="footer-grid">
-    <div><div class="footer-logo"><img src="1horizontal_logo.png" alt="ساویسمان" onerror="this.style.border='3px solid red'"></div><p class="footer-about">ساویسمان، پخش‌کننده رسمی لوله و اتصالات، پمپ و فلاشتانک در کشور.</p></div>
-    <div><div class="footer-title">دسترسی سریع</div><ul class="footer-links"><li><a href="index.html">خانه</a></li><li><a href="blog.html">آموزش</a></li><li><a href="price.html">لیست قیمت</a></li><li><a href="contact.html">تماس</a></li></ul></div>
-    <div><div class="footer-title">محصولات</div><ul class="footer-links"></ul></div>
-    <div><div class="footer-title">تماس</div><div class="footer-contact-item"><span class="ic">📍</span><span>ملارد، بلوار هفت تیر، پلاک ۴۴۶</span></div><div class="footer-contact-item"><span class="ic">📞</span><span>۰۲۱-۶۵۱۲-۳۴۵۰</span></div><div class="footer-contact-item"><span class="ic">📞</span><span>۰۲۱-۶۵۱۲-۳۴۵۰</span></div><div class="footer-contact-item"><span class="ic">✉️</span><span>savisman.co@gmail.com</span></div></div>
+    <div>
+      <div class="footer-logo"><img src="1horizontal_logo.png" alt="ساویسمان" onerror="this.style.border='3px solid red'"></div>
+      <p class="footer-about">ساویسمان، پخش‌کننده رسمی لوله و اتصالات، پمپ و فلاشتانک در کشور.</p>
+    </div>
+    <div>
+      <div class="footer-title">دسترسی سریع</div>
+      <ul class="footer-links"><li><a href="index.html">خانه</a></li><li><a href="blog.html">آموزش</a></li><li><a href="price.html">لیست قیمت</a></li><li><a href="contact.html">تماس</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-title">محصولات</div>
+      <ul class="footer-links">
+        <li><a href="price.html#cat1">لوله و اتصالات</a></li>
+        <li><a href="price.html#cat4">پمپ‌ها</a></li>
+        <li><a href="price.html#cat5">فلاشتانک</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">تماس</div>
+      <div class="footer-contact-item"><span class="ic">📍</span><span>ملارد، بلوار هفت تیر، پلاک ۴۴۶</span></div>
+      <div class="footer-contact-item"><span class="ic">📞</span><span>۰۲۶-۳۶۵۰-۴۶۴۷</span></div>
+      <div class="footer-contact-item"><span class="ic">📱</span><span>۰۹۰۲-۶۵۰-۴۶۴۷</span></div>
+      <div class="footer-contact-item"><span class="ic">✉️</span><span>savisman.co@gmail.com</span></div>
+    </div>
   </div>
   <div class="footer-bottom"><span>© ۱۴۰۳ ساویسمان. تمام حقوق محفوظ است.</span></div>
 </footer>
@@ -232,6 +247,12 @@
 const observer=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.12});
 document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
 window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=window.scrollY>30?'0 4px 20px rgba(43,91,168,0.15)':'';});
+const navToggle=document.querySelector('.nav-toggle');
+const navLinksEl=document.querySelector('.nav-links');
+if(navToggle&&navLinksEl){
+  navToggle.addEventListener('click',()=>navLinksEl.classList.toggle('open'));
+  navLinksEl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinksEl.classList.remove('open')));
+}
 </script>
 </body>
 </html>
