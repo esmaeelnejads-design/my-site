@@ -8,8 +8,38 @@
 <meta name="description" content="ساویسمان، پخش و فروش انواع لوله و اتصالات تک لایه، پنج لایه، فاضلابی، انواع پمپ، فلاشتانک، تجهیزات استخری، فوم و عایق ساختمانی با کیفیت و قیمت مناسب.">
 <meta property="og:title" content="ساویسمان | پخش تجهیزات ساختمانی و تأسیسات">
 <meta property="og:description" content="عرضه کننده انواع لوله و اتصالات، پمپ، فلاشتانک، تجهیزات استخری، فوم و عایق ساختمانی">
-<meta property="og:url" content="https://savisman.com">
+<meta property="og:url" content="https://savisman.com/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://savisman.com/1horizontal_logo.png">
+<link rel="canonical" href="https://savisman.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "ساویسمان",
+  "url": "https://savisman.com/",
+  "logo": "https://savisman.com/1horizontal_logo.png",
+  "image": "https://savisman.com/1horizontal_logo.png",
+  "description": "پخش و فروش انواع لوله و اتصالات، پمپ، فلاشتانک، تجهیزات استخری، فوم و عایق ساختمانی",
+  "telephone": "+982636504647",
+  "email": "savisman.co@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "بلوار هفت تیر، پلاک ۴۴۶",
+    "addressLocality": "ملارد",
+    "addressCountry": "IR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+    "opens": "08:30",
+    "closes": "19:30"
+  },
+  "sameAs": [
+    "https://t.me/savisman_co"
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -68,14 +98,30 @@
 .brands { background:var(--light);padding:44px 0;border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light); }
 .brands-inner { max-width:1280px;margin:0 auto;padding:0 2rem; }
 .brands-title { text-align:center;font-size:13px;font-weight:700;color:var(--steel);letter-spacing:0.12em;margin-bottom:1.5rem; }
-.brands-logos { display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px; }
+.brands-scroll-wrap { position:relative; }
+.brands-logos { display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px; }
 .brands-logos::-webkit-scrollbar { display:none; }
 .brand-logo {
-  flex-shrink:0;font-size:14px;font-weight:800;color:var(--mid);letter-spacing:0.02em;
-  padding:10px 22px;border:1.5px solid var(--border-light);white-space:nowrap;
+  flex-shrink:0;font-size:16px;font-weight:800;color:var(--mid);letter-spacing:0.02em;
+  padding:14px 28px;border:1.5px solid var(--border-light);white-space:nowrap;
   text-decoration:none;transition:all 0.2s;background:var(--white);
 }
 .brand-logo:hover { color:var(--white);background:var(--blue-main);border-color:var(--blue-main); }
+.brands-arrow {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:40px;height:40px;border-radius:50%;flex-shrink:0;
+  background:var(--white); border:1px solid var(--border-light);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer; box-shadow:var(--shadow); color:var(--blue-main); z-index:2;
+  transition:all 0.2s;
+}
+.brands-arrow:hover { background:var(--blue-main); color:var(--white); border-color:var(--blue-main); }
+.brands-arrow-prev { right:-8px; }
+.brands-arrow-next { left:-8px; }
+@media(max-width:768px){
+  .brands-arrow { display:none; }
+  .brand-logo { font-size:14px;padding:10px 20px; }
+}
 .cta-strip { background:linear-gradient(90deg,var(--blue-dark),var(--blue-main));padding:60px 0; }
 .cta-strip-inner { max-width:1280px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap; }
 .cta-text h2 { font-size:clamp(1.5rem,3vw,2rem);font-weight:900;color:var(--white);margin-bottom:6px; }
@@ -172,23 +218,31 @@
 <div class="brands">
   <div class="brands-inner">
     <p class="brands-title">برندهای معتبر همکار ما</p>
-    <div class="brands-logos">
-      <a href="price.html#cat1" class="brand-logo">نیوپایپ</a>
-      <a href="price.html#cat2" class="brand-logo">آذین</a>
-      <a href="price.html#cat3" class="brand-logo">صدرا</a>
-      <a href="price.html#cat3" class="brand-logo">مولتی پایپ</a>
-      <a href="price.html#cat4" class="brand-logo">سیستما</a>
-      <a href="price.html#cat4" class="brand-logo">گرین</a>
-      <a href="price.html#cat4" class="brand-logo">شیمجه</a>
-      <a href="price.html#cat4" class="brand-logo">واتک</a>
-      <a href="price.html#cat5" class="brand-logo">ویلما</a>
-      <a href="price.html#cat5" class="brand-logo">فرپود</a>
-      <a href="price.html#cat6" class="brand-logo">نقش جهان</a>
-      <a href="price.html#cat7" class="brand-logo">ویسپار</a>
-      <a href="price.html#cat8" class="brand-logo">SGP</a>
-      <a href="price.html#cat9" class="brand-logo">سوپرفلکس</a>
-      <a href="price.html#cat9" class="brand-logo">ایزومت</a>
-      <a href="price.html#cat9" class="brand-logo">سپهرفوم</a>
+    <div class="brands-scroll-wrap">
+      <button type="button" class="brands-arrow brands-arrow-prev" onclick="scrollBrandsBy(-3)" aria-label="برندهای قبلی">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="brands-logos">
+        <a href="price.html#cat1" class="brand-logo">نیوپایپ</a>
+        <a href="price.html#cat2" class="brand-logo">آذین</a>
+        <a href="price.html#cat3" class="brand-logo">صدرا</a>
+        <a href="price.html#cat3" class="brand-logo">مولتی پایپ</a>
+        <a href="price.html#cat4" class="brand-logo">سیستما</a>
+        <a href="price.html#cat4" class="brand-logo">گرین</a>
+        <a href="price.html#cat4" class="brand-logo">شیمجه</a>
+        <a href="price.html#cat4" class="brand-logo">واتک</a>
+        <a href="price.html#cat5" class="brand-logo">ویلما</a>
+        <a href="price.html#cat5" class="brand-logo">فرپود</a>
+        <a href="price.html#cat6" class="brand-logo">نقش جهان</a>
+        <a href="price.html#cat7" class="brand-logo">ویسپار</a>
+        <a href="price.html#cat8" class="brand-logo">SGP</a>
+        <a href="price.html#cat9" class="brand-logo">سوپرفلکس</a>
+        <a href="price.html#cat9" class="brand-logo">ایزومت</a>
+        <a href="price.html#cat9" class="brand-logo">سپهرفوم</a>
+      </div>
+      <button type="button" class="brands-arrow brands-arrow-next" onclick="scrollBrandsBy(3)" aria-label="برندهای بعدی">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
     </div>
   </div>
 </div>
@@ -263,5 +317,30 @@
 </footer>
 
 <script src="main.js"></script>
+<script>
+const observer=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');});},{threshold:0.12});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=window.scrollY>30?'0 4px 20px rgba(43,91,168,0.15)':'';});
+const navToggle=document.querySelector('.nav-toggle');
+const navLinksEl=document.querySelector('.nav-links');
+if(navToggle&&navLinksEl){
+  navToggle.addEventListener('click',()=>navLinksEl.classList.toggle('open'));
+  navLinksEl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinksEl.classList.remove('open')));
+}
+
+function scrollBrandsBy(step){
+  const container = document.querySelector('.brands-logos');
+  if(!container) return;
+  const items = Array.from(container.querySelectorAll('.brand-logo'));
+  const containerRect = container.getBoundingClientRect();
+  let currentIndex = items.findIndex(item=>{
+    const r = item.getBoundingClientRect();
+    return r.right > containerRect.left && r.left < containerRect.right;
+  });
+  if(currentIndex === -1) currentIndex = 0;
+  let targetIndex = Math.max(0, Math.min(items.length - 1, currentIndex + step));
+  items[targetIndex].scrollIntoView({behavior:'smooth', inline:'nearest', block:'nearest'});
+}
+</script>
 </body>
 </html>
