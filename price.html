@@ -62,16 +62,16 @@
 
 .brand-downloads { display:grid;grid-template-columns:repeat(3,1fr);gap:1rem; }
 .pdf-row {
-  display:flex;flex-direction:column;align-items:stretch;background:var(--white);
+  display:flex;align-items:stretch;background:var(--white);
   border:1px solid var(--border-light);transition:all 0.2s;overflow:hidden;
+  height:100px;
 }
 .pdf-row:hover { border-color:var(--blue-light);box-shadow:var(--shadow);transform:translateY(-2px); }
-.pdf-photo { width:100%;height:180px;flex-shrink:0;background:var(--blue-ultra);overflow:hidden; }
-.pdf-photo img { width:100%;height:100%;object-fit:contain;display:block; }
+.pdf-photo { width:100px;flex-shrink:0;background:var(--blue-ultra);overflow:hidden; }
+.pdf-photo img { width:100%;height:100%;object-fit:cover;display:block; }
 .pdf-card {
   background:var(--white);
   padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;flex:1;min-width:0;
-  border-top:1px solid var(--border-light);
 }
 .pdf-icon {
   width:44px;height:44px;background:#FDECEA;color:#D33;flex-shrink:0;
@@ -92,7 +92,7 @@
 }
 .pdf-dl-btn:hover { background:var(--blue-main);color:var(--white); }
 
-@media(max-width:768px){ .brand-downloads{grid-template-columns:1fr;} .pdf-photo{height:160px;} }
+@media(max-width:768px){ .brand-downloads{grid-template-columns:1fr;} .pdf-row{height:84px;} .pdf-photo{width:84px;} }
 </style>
 </head>
 <body>
