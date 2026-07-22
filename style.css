@@ -282,7 +282,8 @@ section { padding: 80px 0; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
-
+  .grid-4 { grid-template-columns: repeat(2,1fr); }
+  .sidebar-layout { grid-template-columns: 1fr; }
   .sidebar-box { position: static; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
