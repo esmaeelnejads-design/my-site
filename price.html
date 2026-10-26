@@ -529,6 +529,19 @@ const navObserver = new IntersectionObserver((entries)=>{
   });
 },{rootMargin:'-40% 0px -50% 0px'});
 sections.forEach(s=>navObserver.observe(s));
+
+// Auto "last updated" date (Jalali) from each PDF's Last-Modified header
+document.querySelectorAll('.pdf-row').forEach(row=>{
+  const a=row.querySelector('.pdf-dl-btn'), meta=row.querySelector('.pdf-meta');
+  if(!a||!meta) return;
+  fetch(a.getAttribute('href'),{method:'HEAD'}).then(r=>{
+    const lm=r.headers.get('Last-Modified');
+    if(!r.ok||!lm) return;
+    const d=new Date(lm);
+    if(isNaN(d)) return;
+    meta.textContent='به‌روزرسانی: '+new Intl.DateTimeFormat('fa-IR-u-ca-persian',{year:'numeric',month:'long'}).format(d);
+  }).catch(()=>{});
+});
 </script>
 </body>
 </html>
